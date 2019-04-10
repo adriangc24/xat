@@ -14,7 +14,7 @@
 <!--p><span>10:44PM - Marge: </span>Well, who was it?</p-->
 <?php
 
-$con = mysqli_connect ('localhost','id9189559_root','P@ssw0rd','id9189559_xat');
+$con = mysqli_connect ('localhost','root','','xat');
 
 if (mysqli_connect_errno()) {
 	echo 'Failed to connect to MySql: '.mysqli_connect_error();
