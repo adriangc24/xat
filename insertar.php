@@ -2,8 +2,8 @@
 <body>
 <?php
 
-$nom=$_POST ['nom'];
-$missatge=$_POST ['missatge'];
+$nom=mysqli_real_escape_string($_POST ['nom']);
+$missatge=mysqli_real_escape_string($_POST ['missatge']);
 $hora=date('Y-m-d H:i:s');
 if (strlen($nom)==0 or strlen($missatge)==0){
 	//die("ERROR: 1 o mas campos vacios");
